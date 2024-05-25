@@ -1,0 +1,146 @@
+body {
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 700px;
+  }
+  
+  .body-section {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-top: 0.05rem;
+    max-width: 900px; 
+    margin: 0 auto;
+    height: 400px; 
+  }
+  
+  .cart-section {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    max-width: 400px;
+    height: 100%; 
+    border: 1px solid #ddd; 
+    padding: 1rem; 
+  }
+  
+  .items-sec {
+    width: 100%;
+    height: 100%; 
+    display: flex; 
+    overflow: auto; 
+    border-top: none;
+    border-bottom: none; 
+  }
+
+.product-img {
+    display: flex;
+    width: 70%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.makeup-img {
+    height: 5rem; 
+    width: 5rem;
+    border-radius: 1rem;
+}
+.HairStyling-img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1rem;
+}
+.Eyecolourpalette-img {
+    height: 5rem; 
+    width: 5rem; 
+    border-radius: 1rem;
+}
+.Makeupbrush-img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+.sort-by-total-sec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-item {
+    padding: 0.5rem; 
+}
+
+.sort-by {
+    padding: 0.5rem; 
+}
+
+#option {
+    font-size: 0.8rem; 
+    padding: 0.3rem; 
+}
+
+.product-disc {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+}
+
+.disc-para {
+    font-size: 0.8rem; 
+    color: rgb(90, 90, 90);
+}
+
+.Add-button {
+    margin: 0.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding-bottom: 0.5rem; 
+}
+
+.procedd-sec {
+    width: 100%;
+    height: 3rem; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem; 
+    border-radius: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    background-color: aliceblue;
+}
+
+.sub-total-checkout {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.procedd-button, .pay-button, .add-butt {
+    padding: 0.5rem; 
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.pay-button {
+    background-color: rgb(109, 145, 245);
+    color: white;
+}
+
+.add-butt {
+    background-color: rgb(191, 191, 191);
+    color: white;
+}

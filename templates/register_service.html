@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/register_service.css') }}" type="text/css">
+  <title>Service Provider</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login_box">
+      <div class="login_header">
+        <span>Service</span>
+      </div>
+      <div class="input_box">
+        <form action="{{ url_for('register_service')}}" method="post" autocomplete="off">
+          <div class="msg">{{ msg }}</div>
+          
+          <div class="input_box">
+            <input type="text" name="name" id="name" class="input-field" required>
+            <label for="email" class="label">Name</label>
+            <i class="bx bx-user icon"></i>
+          </div>
+
+          
+
+          
+
+          <div class="input_box">
+            <input type="text" name="sub" id="sub" class="input-field" required>
+            <label for="email" class="label">Service</label>
+            <i class="bx bx-user icon"></i>
+          </div>
+
+          
+
+          <div class="input_box">
+            <input type="text" name="email" id="email" class="input-field" required>
+            <label for="email" class="label">Email</label>
+            <i class="bx bx-user icon"></i>
+          </div>
+
+          <div class="input_box">
+            <input type="password" name="passwd" id="passwd" class="input-field" required>
+            <label for="passwd" class="label">Password</label>
+            <i class="bx bx-lock-alt icon"></i>
+          </div>
+
+
+
+
+      
+          <div class="input_box">
+            <input type="submit" class="input-submit" value="Register" name="register_button">
+          </div>
+        </form>
+      </div>
+
+      <div class="register">
+        <span> Already have an account? <a href="{{ url_for('login') }}">Login</a></span>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Care</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header-content">
+
+            <a href="#logo" class="logo">
+                <img src="../static/images/vistacare.jpg" alt="logoIcon" class="logo-icon">
+                <span class="logo-text">Vista Care</span>
+            </a>
+    
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+            
+            <a href="{{ url_for('profile') }}" class="profile_icon">
+                <div class="profile_img_container">
+                    <img src="../static/images/profile_icon.jpg" alt="" class="profile-logo">
+                </div>
+            </a>
+
+            <a href="{{ url_for('cart') }}" class="cart_icon">
+                <div class="cart_img_container">
+                    <img src="../static/images/cart.png" alt="" class="cart-logo">
+                    <!-- <i class="fa-duotone fa-cart-shopping"></i> -->
+                </div>
+            </a>
+            
+            <button type="button" class="menu">
+                <img src="../static/images/Hamburger.svg" alt="menuIcon" class="menuIcon">
+            </button>
+        </header>
+
+        <div class="heroSection">
+            <section class="mainSection">
+                <div class="content-Left">
+                    <p class="section-label">
+                        Your Trust is Our Priority
+                    </p>
+                    <h1 class="section-heading">
+                        Our Specialities
+                    </h1>
+                    <p class="section-para">
+                        Vista Care is a technology platform offering a variety of services at home. Customers use our platform to book services such as beauty treatments, haircuts, massage therapy, cleaning, plumbing, carpentry, appliance repair, painting etc. These services are delivered in the comfort of their home and at a time of their choosing. We promise our customers a high quality, standardised and reliable service experience. To fulfill this promise, we work closely with our hand-picked service partners, enabling them with technology, training, products, tools, financing, insurance and brand, helping them succeed and deliver on this promise.
+Our Vision: Empower millions of professionals worldwide to deliver services at home like never experienced before
+                    </p>
+                </div>
+                <div class="content-Right">
+                    <div class="img-container">
+                        <img src="../static/images/3275463.jpg" alt="heroSectionImg" class="section-img">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="services">
+            <div class="service-main-container">
+                <div class="service-option-top">
+                    <div class="services-option">
+                        <a href="">
+                            <img src="../static/images/house-cleaning.jpg" alt="" class="service-option-img">
+                            <p>Home Cleaning</p>
+                        </a>
+                    </div>
+                    <div class="services-option">
+                        <a href="{{ url_for('salon_at_home') }}" class="service-option-anchor-tag">
+                            <img src="../static/images/Salon-at-home.jpg" alt="" class="service-option-img">
+                            <p>Salon at home</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-option-top">
+                    <div class="services-option">
+                        <a href="{{ url_for('products') }}" class="service-option-anchor-tag">
+                            <img src="../static/images/products.jpg" alt="" class="service-option-img">
+                            <p>Products</p>
+                        </a>
+                    </div>
+                    <div class="services-option">
+                        <a href="" class="service-option-anchor-tag">
+                            <img src="../static/images/healthcare.jpg" alt="" class="service-option-img">
+                            <p>Healthcare</p>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <footer class="footer">
+                
+                <div class="footer-left">
+                    <div class="studysync-footer-img-content">
+                        <a class="comp-logo">
+                            <img src="../static/images/vistacare.jpg" alt="vistacare-icon" class="logo-svg">
+                            Vista Care
+                        </a>
+                    </div>
+
+                    <p class="left-text">Our social handle</p>
+
+                    <div class="websites-handler">
+
+                        <a href="https://www.instagram.com/" class="web-links">
+                            <img src="../static/images/instagram.svg" alt="handle-logo" class="web-logo">
+                        </a>
+                        <a href="https://www.twitter.com/" class="web-links">
+                            <img src="../static/images/twitter.svg" alt="handle-logo" class="web-logo">
+                        </a>
+                        <a href="https://www.linkedin.com/" class="web-links">
+                            <img src="../static/images/linkedin.svg" alt="handle-logo" class="web-logo">
+                        </a>
+                        <a href="https://www.github.com/" class="web-links">
+                            <img src="../static/images/github.svg" alt="handle-logo" class="web-logo">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="footer-right">
+                    Coulum 1
+                    <div class="footer-grid-column">
+                        <div class="footer-grid-heading">
+                            Products
+                        </div>
+
+                        <ul class="footer-links-class">
+                            <li>
+                                <a href="#overview" class="footer-links">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#solutions" class="footer-links">Solutions</a>
+                            </li>
+                            <li>
+                                <a href="#pricing" class="footer-links">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#Customers" class="footer-links">Customers</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    Coulum 2
+                    <div class="footer-grid-column">
+                        <div class="footer-grid-heading">
+                            Company
+                        </div>
+
+                        <ul class="footer-links-class">
+                            <li>
+                                <a href="#about" class="footer-links">About</a>
+                            </li>
+                            <li>
+                                <a href="#relations" class="footer-links">Invester Relations</a>
+                            </li>
+                            <li>
+                                <a href="#jobs" class="footer-links">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="#press" class="footer-links">Press</a>
+                            </li>
+                            <li>
+                                <a href="#blog" class="footer-links">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    Coulum 3
+                    <div class="footer-grid-column">
+                        <div class="footer-grid-heading">
+                            Support
+                        </div>
+
+                        <ul class="footer-links-class">
+                            <li>
+                                <a href="#contact" class="footer-links">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#doucumentation" class="footer-links">Documentation</a>
+                            </li>
+                            <li>
+                                <a href="#chat" class="footer-links">Chat</a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="footer-links">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    Coulum 4
+                    <div class="footer-grid-column">
+                        <div class="footer-grid-heading">
+                            Legal
+                        </div>
+
+                        <ul class="footer-links-class">
+                            <li>
+                                <a href="#services" class="footer-links">Terms of Services</a>
+                            </li>
+                            <li>
+                                <a href="#privacyPolicy" class="footer-links">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#cookieSetting" class="footer-links">Cookie Setting</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>  -->
+
+            </footer>
+            <div class="copyright-container">
+                <p>
+                    ©2024 - Present VistaCorp. All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}" type="text/css">
+  <title>Login</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login_box">
+      <div class="login_header">
+        <span>Login</span>
+      </div>
+      <div class="input_box">
+        <form action="{{ url_for('login')}}" method="post" autocomplete="off">
+          <div class="msg">{{ msg }}</div>
+          
+          <div class="input_box">
+            <input type="text" name="email" id="email" class="input-field" required>
+            <label for="email" class="label">Email</label>
+            <i class="bx bx-user icon"></i>
+          </div>
+
+          <div class="input_box">
+            <input type="password" name="passwd" id="passwd" class="input-field" required>
+            <label for="passwd" class="label">Password</label>
+            <i class="bx bx-lock-alt icon"></i>
+          </div>
+
+
+
+
+      
+          <div class="input_box">
+            <input type="submit" class="input-submit" value="Login" name="login_button">
+          </div>
+        </form>
+      </div>
+
+      <div class="register">
+        <span> Don't have an account? <a href="{{ url_for('login_options') }}">Register</a></span>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

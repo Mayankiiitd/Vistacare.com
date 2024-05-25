@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/payment-portal-style.css') }}">
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="container">
+            <form action="" method="get">
+                <h1 class="mainheading"> PAYMENT</h1>
+                <h2> Payment Details</h2>
+                <p>
+                    Card Type:
+                    <select name="card_type" id="card_type" required>
+                        <option value="">------Card Type------</option>
+                        <option value="Visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="RuPay">RuPay</option>
+                    </select>
+                </p>
+                <p>
+                    Card Number:
+                    <input type="number" name="card_number" id="card_number" required placeholder="xxxx-xxxx-xxxx-xxxx">
+                </p>
+                <p>
+                    Expiration Date:
+                    <input type="date" name="exp_date" id="exp_date" required>
+                </p>
+                <p>
+                    CVV:
+                    <input type="number" name="cvv" id="cvv" required placeholder="123">
+                </p>
+                
+                <div class="pay-now-div">
+                    <a href="{{ url_for('pay_success') }}" class="paynow-button">
+                        Paynow
+                    </a>
+                </div>
+
+               
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

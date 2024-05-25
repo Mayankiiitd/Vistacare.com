@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="{{ url_for('static',filename='css/salon_at_home.css') }}">
+    <title>Salon at home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/salon_at_home.css') }}">
+    <!-- <link rel="stylesheet" href="salon-at-home.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <header class="Header-container">
+            <div class="h1-head-tag">
+                <h1>SALON AT HOME</h1>
+                <hr class="horizontal">
+            </div>
+
+        </header>
+        <div class="content">
+            <section class="services">
+                <h2> Choose your service and its related products</h2>
+
+                <div class="options-grid">
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/1vista.jpeg" alt="Makeup" class="service-opt-logo">
+                            <h3>Makeup</h3>
+                            <p>Get the most elegant and beautiful makeup.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/2vista.jpeg" alt="Advanced facial" class="service-opt-logo">
+                            <h3>Advanced facial</h3>
+                            <p>We use technological Advanced tools and natural products.</p>
+                        </div>
+                    </a>
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/4vista.jpeg" alt="Male grooming" class="service-opt-logo">
+                            <h3>Male grooming</h3>
+                            <p>Achieve fresh look for you.</p>
+                        </div>
+                    </a>
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/3vista.jpeg" alt="Hair Styling" class="service-opt-logo">
+                            <h3>Hair Styling</h3>
+                            <p>Let our stylists create a unique look for you.</p>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 Salon Services at home</p>
+        </footer>
+        
+    </div>
+
+</body>
+
+</html>

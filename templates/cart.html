@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/cart.css') }}">
+</head>
+    <body>
+        <div class="body-section">
+            <div class="cart-section">
+                <div class="heading-cart">
+                    <h1>Cart</h1>
+                </div>
+                <div class="sort-by-total-sec">
+                    <div class="total-item">
+                        <h2>The Items You Have</h2>
+                    </div>
+                    <div class="sort-by">
+                        <select id="option">
+                            <option>Sort</option>
+                            <option value="Price">Price</option>
+                            <option value="date">Date</option>
+                            <option value="offer">Offer</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="items-sec">
+                    <div class="product-img">
+                        <img src="../static/images/1vista.jpeg" alt="makeup-img" class="makeup-img">
+                        <div class="product-disc">
+                            <p>Make up</p>
+                            <p class="disc-para">Our Makeup Artist would consult you on your skin type, occassion and the type of look you want</p>
+                            <p>Price: 3000</p>
+                        </div>
+                    </div>
+                    <div class="price-tag-quantity">
+                        <p>Quantity: 1</p>
+                        <button>Remove</button>
+                    </div>
+                    <div class="product-img">
+                        <img src="../static/images/3vista.jpeg" alt="HairStyling-img" class="HairStyling-img">
+                        <div class="product-disc">
+                            <p>Hair Styling</p>
+                            <p class="disc-para">Let our stylists create a unique look for you</p>
+                            <p>Price: 1500</p>
+                        </div>
+                    </div>
+                    <div class="price-tag-quantity">
+                        <p>Quantity: 1</p>
+                        <button>Remove</button>
+                    </div>
+                    <div class="product-img">
+                        <img src="../static/images/makeuppr.jpg" alt="Eyecolourpalette-img" class="Eyecolourpalette-img">
+                        <div class="product-disc">
+                            <p>Eye colour palette</p>
+                            <p class="disc-para">Showcase beauty of eyes</p>
+                            <p>Price: 500</p>
+                        </div>
+                    </div>
+                    <div class="price-tag-quantity">
+                        <p>Quantity: 1</p>
+                        <button>Remove</button>
+                    </div>
+                    <!-- Fourth Product -->
+                    <div class="product-img">
+                        <img src="../static/images/brush.jpg" alt="Makeupbrush-img" class="Makeupbrush-img">
+                        <div class="product-disc">
+                            <p>Makeup brush</p>
+                            <p class="disc-para">Colour your hair</p>
+                            <p>Price: 50</p>
+                        </div>
+                    </div>
+                    <div class="price-tag-quantity">
+                        <p>Quantity: 1</p>
+                        <button>Remove</button>
+                    </div>
+                </div>
+    
+                <div class="Add-button">
+                    <button class="add-butt">Add More</button>
+                </div>
+            </div>
+            <div class="procedd-sec">
+                <div class="sub-total-checkout">
+                    <p>Subtotal: 4</p>
+                    <p>Price: 5050</p>
+                </div>
+                <div class="procedd-button">
+                    
+                    <a class="pay-button" href="{{ url_for('payment') }}">Pay</a>
+                </div>
+            </div>
+            
+
+            <footer>
+                <p>&copy; 2024 Cart section @Vista Care</p>
+            </footer>
+    
+        </div>
+    
+        
+    </body>
+</html>

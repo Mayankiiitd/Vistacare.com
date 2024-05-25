@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="{{ url_for('static',filename='css/products.css') }}">
+    <title>Products</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/products.css') }}">
+    <!-- <link rel="stylesheet" href="salon-at-home.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <header class="Header-container">
+            <div class="h1-head-tag">
+                <h1>PRODUCTS</h1>
+                <hr class="horizontal">
+            </div>
+
+        </header>
+        <div class="content">
+            <section class="services"> 
+                <h2> Choose your products</h2>
+
+                <div class="options-grid">
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/makeuppr.jpg">
+                            <p>Eye colour palette</p>
+                            <p>Showcase beauty of eyes.</p>
+                            <p>Price: 500</p>
+                        </div>
+                    </a>
+                    
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/brush.jpg">
+                            <p>Makeup brush</p>
+                            <p>Colour your hair.</p>
+                            <p>Price: 50</p>
+                        </div>
+                    </a>
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/bp_machine.jpg">
+                            <h3>Blood Pressure Machine</h3>
+                            <p>Stay fit, stay healthy.</p>
+                            <p>Price: 2000</p>
+                        </div>
+                    </a>
+                    <a href="#" onclick="alert('ADDED TO CART!')" style="text-decoration: none;">
+                        <div class="service-card">
+                            <img src="../static/images/handwash.jpg" alt="Hair Styling" class="service-opt-logo">
+                            <h3>Handwash</h3>
+                            <p>Make your hand clean and germs free.</p>
+                            <p>Price: 70</p>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 Salon Services at home</p>
+        </footer>
+        
+    </div>
+
+</body>
+
+</html>

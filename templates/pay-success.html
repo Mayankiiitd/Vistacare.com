@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        @keyframes slideFromLeftToRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        }
+        
+        .content {
+            width: 40%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 4rem;
+            padding-bottom: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+            border-radius: 1rem;
+            opacity: 0;
+            animation: slideFromLeftToRight 1.6s ease forwards;
+        }
+        
+        .img-icon {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 100%;
+        }
+        
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .payement-success-div {
+            font-size: 3rem;
+        }
+        
+        .button-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+        }
+        
+        .back-button {
+            font-size: 1rem;
+            font-size: x-large;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 1px solid grey;
+            background-color: rgb(107, 107, 255);
+            color: white;
+        }
+        
+        .back-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="image-container">
+                <img src="../static/images/vistacare.jpg" alt="icon" class="img-icon">
+            </div>
+            <div class="text-container">
+                <div class="payement-success-div">
+                    Payment Done Successfully
+                </div>
+                <div class="button-div">
+                    <a href="{{ url_for('main_home') }}" class="back-link">
+                        <button class="back-button">Back To Home</button>
+                    </a>
+                    
+
+
+                    <p id="datetime"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    // Get current date and time
+    var now = new Date();
+    var datetime = now.toLocaleString();
+
+    // Insert date and time into HTML
+    document.getElementById("datetime").innerHTML = datetime;
+</script>
+
+</html>
